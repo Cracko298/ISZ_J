@@ -11,11 +11,10 @@
 
 # Loading/Injecting:
 - Source requires an App by the name of "ISZ-Plugin.exe" to be opened at all times.
-
-> C++     - CreateRemoteThread, LoadLibrary + Reflective DLL, SetWindowsHookEx
-> 
-> Python  - Ctypes.CDLL
-
+```
+> C++       CreateRemoteThread, LoadLibrary + Reflective DLL, SetWindowsHookEx
+> Python    Ctypes.CDLL
+```
 
 
 
