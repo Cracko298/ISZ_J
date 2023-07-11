@@ -7,17 +7,20 @@ A *.dll hook (Shared Library) for ISZ-2021 which permits Jumping while "ISZ-Plug
 # Download Compiled:
 - [Windows x64]().
 - [Linux/Unix]().
-- [Windows x32]().
 
 
 # Building:
-### Windows:
+### Windows x64:
 ```
-> g++ -shared -o ISZ_J.dll iszjump.cpp -luser32
+> g++ -shared -o ISZ_Jx64w.dll iszjump.cpp -luser32
+```
+### Windows x32:
+```
+> g++ -m32 -shared -o ISZ_Jx32w.dll ISZ_Jx32w.o -luser32
 ```
 ### Linux/Unix:
 ```
-> g++ -shared -fPIC -o ISZ_J.so iszjump.cpp -luser32
+> g++ -shared -fPIC -o ISZ_Jx64l.so iszjump.cpp -luser32
 ```
 ## Requirements:
 > Standard Linkage Library.
@@ -25,3 +28,10 @@ A *.dll hook (Shared Library) for ISZ-2021 which permits Jumping while "ISZ-Plug
 > C++ 14 (or Newer).
 > 
 > GCC or MinGW-w64
+
+
+# Name Scheme:
+```
+ISZ_J    x64/32       w/l         *.dll/*.so
+^Name    ^CPU Arch    ^OS Type    ^Extension
+```
