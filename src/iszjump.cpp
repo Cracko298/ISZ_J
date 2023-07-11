@@ -39,8 +39,12 @@ bool IsProcessRunning(const wchar_t* processName)
     return found;
 }
 
+void SendKeyPress(WORD keyCode)
+{
+    keybd_event(keyCode, 0, 0, 0);
+    keybd_event(keyCode, 0, KEYEVENTF_KEYUP, 0);
+}
 
-// Keyboard hook procedure
 LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 {
     if (nCode == HC_ACTION)
@@ -48,8 +52,8 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
         KBDLLHOOKSTRUCT* pKeyboardStruct = (KBDLLHOOKSTRUCT*)lParam;
         if (wParam == WM_KEYDOWN && pKeyboardStruct->vkCode == VK_SPACE)
         {
-            // Replace this line with the desired action
             std::cout << "`set Engine.Character bPressedJump True" << std::endl;
+            SendKeyPress(VK_RETURN);
         }
     }
 
@@ -58,14 +62,11 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
 
 extern "C" DLL_EXPORT void MainApp()
 {
-    // Check if the target process is running
     const wchar_t* targetProcessName = L"ISZ-Plugin.exe";
     while (IsProcessRunning(targetProcessName))
     {
-        // Set up the keyboard hook
         HHOOK hKeyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, NULL, 0);
 
-        // Message loop
         MSG message;
         while (GetMessage(&message, NULL, 0, 0))
         {
@@ -73,7 +74,6 @@ extern "C" DLL_EXPORT void MainApp()
             DispatchMessage(&message);
         }
 
-        // Remove the keyboard hook
         UnhookWindowsHookEx(hKeyboardHook);
     }
 }
