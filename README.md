@@ -17,5 +17,7 @@ A *.dll hook (Shared Library) for ISZ-2021 which permits Jumping while "ISZ-Plug
 ```
 ## Requirements:
 > Standard Linkage Library.
+> 
 > C++ 14 (or Newer).
+> 
 > GCC or MinGW-w64
