@@ -49,7 +49,7 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
         if (wParam == WM_KEYDOWN && pKeyboardStruct->vkCode == VK_SPACE)
         {
             // Replace this line with the desired action
-            std::cout << "`set Engine.Character bPressedJump True`" << std::endl;
+            std::cout << "`set Engine.Character bPressedJump True" << std::endl;
         }
     }
 
