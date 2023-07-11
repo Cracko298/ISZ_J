@@ -1,6 +1,6 @@
 # ISZ_J
 - A simple Dynamic Link Library *.dll *.so Shared Library for ISZ-2021 which permits Jumping in ISZ.
-- Needs to be called from another Application or Script.
+- Requires the UE4 Console, and needs to be called from another Application or Script.
 
 # Features:
 - Enables Jumping in ISZ-2021 (That's it).
