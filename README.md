@@ -32,6 +32,6 @@ A *.dll hook (Shared Library) for ISZ-2021 which permits Jumping while "ISZ-Plug
 
 # Name Scheme:
 ```
-ISZ_J    x64/32       w/l         *.dll/*.so
-^Name    ^CPU Arch    ^OS Type    ^Extension
+ISZ_J     x64/32        w/l          *.dll/*.so
+^ Name    ^ CPU Arch    ^ OS Type    ^ Extension
 ```
