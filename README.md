@@ -6,7 +6,7 @@ A *.dll hook (Shared Library) for ISZ-2021 which permits Jumping while "ISZ-Plug
 
 
 
-## Building:
+# Building:
 ### Windows:
 > g++ -shared -o ISZ_J.dll iszjump.cpp -luser32
 ### Linux/Unix:
