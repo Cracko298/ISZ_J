@@ -1,8 +1,8 @@
 # ISZ_J
-A *.dll hook (Shared Library) for ISZ-2021 which permits Jumping while "ISZ-Plugin.exe" is running.
+- A simple Dynamic Link Library *.dll *.so Shared Library for ISZ-2021 which permits Jumping in ISZ.
 
 # Features:
-- A simple Dynamic Link Library *.dll *.so Shared Library for ISZ-2021 which permits Jumping in ISZ.
+- Enables Jumping in ISZ-2021 (That's it).
 
 # Download Compiled:
 - Download [Windows x64](https://github.com/ISZ-Hacker-Organization/ISZ_J/releases/download/v1.0.0/ISZ_Jx64w.dll).
