@@ -36,7 +36,7 @@
 ```
 ### Linux/Unix:
 ```
-> g++ -shared -fPIC -o ISZ_Jx64l.so ISZ_Jx64w.cpp
+> g++ -shared -o ISZ_Jx64l.so -fPIC ISZ_Jx64w.cpp
 ```
 ## Requirements:
 > Standard Linkage Library.
