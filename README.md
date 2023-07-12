@@ -22,15 +22,15 @@
 # Building:
 ### Windows x64:
 ```
-> g++ -shared -o ISZ_Jx64w.dll iszjump.cpp -luser32
+> g++ -shared -o ISZ_Jx64w.dll ISZ_Jx64w.cpp
 ```
 ### Windows x32:
 ```
-> g++ -m32 -shared -o ISZ_Jx32w.dll ISZ_Jx32w.o -luser32
+> g++ -m32 -shared -o ISZ_Jx32w.dll ISZ_Jx32w.o
 ```
 ### Linux/Unix:
 ```
-> g++ -shared -fPIC -o ISZ_Jx64l.so iszjump.cpp -luser32
+> g++ -shared -fPIC -o ISZ_Jx64l.so ISZ_Jx64w.cpp
 ```
 ## Requirements:
 > Standard Linkage Library.
