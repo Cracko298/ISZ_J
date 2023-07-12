@@ -9,6 +9,7 @@
 ### Version v2.0 Released
 - Doesn't require being Linked to "*-luser32*" anymore.
 - More efficient Manner of Jumping (ironically enough).
+- Smaller File Size (-300% compared to Version v1.0).
 - Includes a Python-File (compiled) to call MainApp.
 
 
