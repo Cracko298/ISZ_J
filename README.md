@@ -2,10 +2,10 @@
 - A simple Dynamic Link Library *.dll *.so Shared Library for ISZ-2021 which permits Jumping in ISZ.
 - Requires the UE4 Console, and needs to be called from another Application or Script.
 
-# Features:
+## Features:
 - Enables Jumping in ISZ-2021 (That's it).
 
-# Update Note(s):
+## Update Note(s):
 ### Version v2.0 Released
 - Doesn't require being Linked to "*-luser32*" anymore.
 - More efficient Manner of Jumping (ironically enough).
