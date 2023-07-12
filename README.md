@@ -5,6 +5,12 @@
 # Features:
 - Enables Jumping in ISZ-2021 (That's it).
 
+# Update Note(s):
+### Version v2.0 Released
+- Doesn't require being Linked to "*-luser32*" anymore.
+- More efficient Manner of Jumping (ironically enough).
+
+
 # Download Compiled:
 - Download [Windows x64](https://github.com/ISZ-Hacker-Organization/ISZ_J/releases/download/v1.0.0/ISZ_Jx64w.dll).
 - Download [Linux/Unix](https://github.com/ISZ-Hacker-Organization/ISZ_J/releases/download/v1.0.0/ISZ_Jx64l.so).
