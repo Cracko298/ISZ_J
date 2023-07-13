@@ -8,10 +8,9 @@
 - Download the [Example Reader](https://github.com/ISZ-Hacker-Organization/ISZ_J/releases/download/v3.0.0/iszf.exe).
 
 # Loading/Injecting:
-- Source requires an App by the name of "ISZ-Plugin.exe" to be opened at all times.
 ```
-> C++       CreateRemoteThread, LoadLibrary + Reflective DLL, SetWindowsHookEx
-> Python    Ctypes.CDLL
+> C++       LoadLibrary (Call the function MainApp).
+> Python    Ctypes.CDLL (Call the function MainApp).
 ```
 # Demonstration:
 - Video Demonstration [Here](https://youtu.be/FnrFsDICKa4) on YouTube.
