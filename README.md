@@ -50,9 +50,7 @@ ISZ_J     x64/X32        w/l          *.dll/*.so
 - Enables Jumping in ISZ-2021 (That's it).
 
 ## Update Note(s):
-### Version v2.0 Released
-- Doesn't require being Linked to "*-luser32*" anymore.
-- More efficient Manner of Jumping (ironically enough).
-- Smaller File Size (-300% compared to Version v1.0).
-- Includes a Python-File (compiled) to call MainApp.
-
+### Version v3.0 Released
+- No More Console Window Being Shown (jumping is now seemless).
+- Added some debug dialogue.
+- Updated "iszf.exe" (Executes ISZ_J DLL).
